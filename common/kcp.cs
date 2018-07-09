@@ -335,6 +335,8 @@ public class KCP
             snd_queue = append<Segment>(snd_queue, seg);
         }
 
+        if(nodelay != 0) flush();
+
        return 0;
     }
 
